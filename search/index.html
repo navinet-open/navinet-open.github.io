@@ -5,54 +5,34 @@
 <meta name="viewport" content="width=device-width">
 <link rel="icon" type="image/png" href="/img/favicon.png">
 <link rel="apple-touch-icon-precomposed" type="image/png" href="/img/favicon.png">
-<title>NaviNet Updates History</title>
+<title>NaviNet Search</title>
 
-<meta name="title" content="NaviNet Updates History">
-<meta name="description" content="Check all the changelogs and updates of NaviNet">
+<meta name="title" content="NaviNet Search">
+<meta name="description" content="Search things on the web">
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://navinet-open.github.io/updates/">
-<meta property="og:title" content="NaviNet Updates History">
-<meta property="og:description" content="Check all the changelogs and updates of NaviNet">
+<meta property="og:url" content="https://navinet-open.github.io/search/">
+<meta property="og:title" content="NaviNet Search">
+<meta property="og:description" content="Search things on the web">
 
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://navinet-open.github.io/updates/">
-<meta property="twitter:title" content="NaviNet Updates History">
-<meta property="twitter:description" content="Check all the changelogs and updates of NaviNet">
+<meta property="twitter:url" content="https://navinet-open.github.io/search/">
+<meta property="twitter:title" content="NaviNet Search">
+<meta property="twitter:description" content="Search things on the web">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFNX3PF99E"></script>
 
 
-    <style>
-      div.row {
-        margin-top: 1rem;
-      }
-      section.col {
-        text-shadow: var(--color-text-shadow);
-      }
-      section.col h1 {
-        border-bottom: var(--color-border-subtle);
-        padding-bottom: 0.2rem;
-        margin-bottom: 0.5rem;
-      }
-      section.content {
-        border-left: none;
-      }
-      h1.heading {
-        font-size: 1.75rem;
-      }
-    </style>
-  <link rel="stylesheet" href="/assets/about.c8fd3ccd.css" />
-<link rel="stylesheet" href="/assets/about.004eb6c9.css" /><script type="module" src="/hoisted.fb209cfb.js"></script></head>
-  <body>
-    <div class="main-container">
-      <header class="astro-3T3XCSVR">
+  <link rel="stylesheet" href="/assets/about.004eb6c9.css" />
+<link rel="stylesheet" href="/assets/about.c8fd3ccd.css" /><script type="module" src="/hoisted.faabf3f6.js"></script></head>
+  <div class="main-container">
+    <header class="astro-3T3XCSVR">
   <a href="/" class="astro-3T3XCSVR">NaviNet</a>
   <a href="/updates" class="astro-3T3XCSVR">Updates</a>
 </header>
 
 
-      <header class="astro-WFSRGPKS">
+    <header class="astro-WFSRGPKS">
   <section class="header-title user-select astro-WFSRGPKS">
     <h1 class="astro-WFSRGPKS">NaviNet.tk</h1>
   </section>
@@ -61,7 +41,7 @@
   Services
 </a>
 
-    <a href="/search" class="astro-WFSRGPKS astro-7CPXOL3O">
+    <a href="/search" class="astro-WFSRGPKS active astro-7CPXOL3O">
   Search NEW
 </a>
 
@@ -81,7 +61,14 @@
 </header>
 
 
-      <div class="row">
+    <main>
+      <div class="row top-br">
+        <section class="col content content-left">
+          <h1 class="search-title">NaviNet Search <p>Public Test</p></h1><p class="center">Search things on the web</p><br><div id="search-box">
+    
+    <gcse:search></gcse:search>
+  </div>
+        </section>
         <aside class="col sidebar">
   <h1 class="side-title first astro-WYY5E2M3">Websites</h1>
 <section class="card aside-buttons astro-WYY5E2M3">
@@ -147,31 +134,9 @@
     }
   }
 </style>
-        <section class="col content content-left">
-          <h1 class="heading">Update History</h1>
-<p>Welcome to the Updates page. Check the latest changes or go back in time!</p>
-<h2>0.6 - November 06, 2022</h2>
-<div class="card card-ul"><p><li><strong>Released our new services: NaviNet Search</strong></li>
-<li>Changed main accent from blue to green</li>
-<li>Redesigned buttons cards</li>
-<li>Improved footer for mobile</li>
-<li>Improved consistency</li>
-<li>Removed left sidebar</li>
-<li>Other improvements (performance and accesibility)</li>
-More info about this update check the <a href="https://github.com/navinet-open/web">GitHub Repo</a></p></div>
-<h2>0.5 - November 05, 2022</h2>
-<div class="card card-ul"><li>Added new page called updates. (This one you are rn)</li>
-<li>Added and fixed some buttons</li>
-<li>Added a right sidebar</li>
-<li>Removed NeoAds for performance reasons</li><li><p>Removed Marquee component for causing issus with chromium based browsers on
-mobile</p></li><p><li>Improved responsiveness </li>
-<li>Improved accesibility</li>
-<li>Other improvements and refactors</li>
-More info about this update check the <a href="https://github.com/navinet-open/web">GitHub
-Repo</a></p></div>
-        </section>
       </div>
-      <footer class="astro-XAE2IZUL">
+    </main>
+    <footer class="astro-XAE2IZUL">
   <section class="container flex astro-XAE2IZUL">
     <a href="/about" class="astro-XAE2IZUL">About</a>
     <a href="/rss.xml" class="astro-XAE2IZUL">RSS</a>
@@ -183,5 +148,108 @@ Repo</a></p></div>
   </section>
 </footer>
 
-    </div>
-  </body></html>
+  </div>
+</html>
+
+<style>
+  h1.search-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  h1.search-title p {
+    font-size: 1rem;
+    font-style: italic;
+    margin-left: 0.5rem;
+    font-weight: 400;
+  }
+  .gsc-control-cse {
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    background: var(--color-bg-container);
+    border: var(--color-border-subtle);
+    border-radius: var(--radius-2);
+    box-shadow: var(--color-container-shadow);
+  }
+  button.gsc-search-button {
+    padding-block: 0.65rem;
+    background: var(--color-bg-container);
+    border: var(--color-border-subtle);
+    border-radius: var(--radius-1);
+    box-shadow: var(--color-container-shadow);
+    cursor: pointer;
+    transition: 100ms;
+  }
+  button.gsc-search-button svg {
+    fill: var(--color-href);
+  }
+  button.gsc-search-button:hover {
+    background-color: var(--color-href);
+    border: var(--color-border-subtle);
+  }
+  button.gsc-search-button:active,
+  button.gsc-search-button:focus {
+    background-color: var(--color-href);
+    border: var(--color-border-subtle);
+    fill: #000;
+  }
+  button.gsc-search-button:hover svg,
+  button.gsc-search-button:active svg,
+  button.gsc-search-button:focus svg {
+    fill: #000;
+  }
+  .gsc-input-box {
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius-1);
+    background: var(--color-bg-container);
+    box-shadow: var(--color-container-shadow);
+  }
+  .gsc-input {
+    background: inherit;
+    color: var(--color-text);
+  }
+  a.gsst_a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .gsst_a .gscb_a {
+    padding: 0 0.5rem 0 0.5rem;
+    font-size: 1.5rem;
+    color: var(--color-href);
+  }
+
+  .gsst_a:hover .gscb_a,
+  .gsst_a:focus .gscb_a {
+    color: var(--color-href-hover);
+  }
+  .gsc-orderby {
+    margin-right: 0.5rem;
+  }
+
+  .gsc-result-info,
+  .gsc-orderby-label {
+    color: var(--color-text);
+    opacity: 0.8;
+  }
+  .gsc-selected-option-container {
+    color: var(--color-text);
+    border-radius: var(--radius-1);
+    border: var(--color-border-subtle);
+    text-shadow: none;
+    background: inherit;
+  }
+  .gsc-above-wrapper-area {
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  .gcsc-more-maybe-branding-root {
+    display: none;
+  }
+</style>

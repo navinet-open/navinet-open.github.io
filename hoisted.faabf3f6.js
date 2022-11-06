@@ -1,0 +1,1 @@
+import"./chunks/BaseHead.astro_astro_type_script_index_0_lang.d2cd143e.js";(function(){var c="942443ca8393e4329",e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cse.google.com/cse.js?cx="+c;var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
