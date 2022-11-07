@@ -23,10 +23,10 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFNX3PF99E"></script>
 
 
-  <link rel="stylesheet" href="/assets/about.0cfb480c.css" />
-<link rel="stylesheet" href="/assets/about.2cfa0109.css" />
+  <link rel="stylesheet" href="/assets/about.cee9d698.css" />
+<link rel="stylesheet" href="/assets/about.2a6b2d87.css" />
 <link rel="stylesheet" href="/assets/age-of-war.268dbef6.css" />
-<link rel="stylesheet" href="/assets/_slug_.e29d4008.css" /><script type="module" src="/hoisted.fb209cfb.js"></script></head>
+<link rel="stylesheet" href="/assets/_slug_.e8ca2e1c.css" /><script type="module" src="/hoisted.fb209cfb.js"></script></head>
 
   <div class="main-container">
     <header class="user-select astro-6TFIZTOW">
@@ -65,12 +65,16 @@
           <section class="inner-pod">
             <ul class="ul-list">
               <li>
-                    <a href="/games/categories/strategy">
+                    <a class="li-link" href="/games/categories/strategy">
                       Strategy
                     </a>
                   </li><li>
-                    <a href="/games/categories/action">
+                    <a class="li-link" href="/games/categories/action">
                       Action
+                    </a>
+                  </li><li>
+                    <a class="li-link" href="/games/categories/arcade">
+                      Arcade
                     </a>
                   </li>
             </ul>
@@ -87,17 +91,6 @@
     gap: 1rem;
     margin-bottom: 1rem;
   }
-  aside.sidebar ul.ul-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    width: 100%;
-  }
-  aside.sidebar ul.ul-list li a {
-    display: block;
-    width: 100%;
-    list-style-type: none;
-  }
   @media (max-width: 700px) {
     div.sidebar-mobile {
       width: 100%;
@@ -112,35 +105,78 @@
   }
 </style>
       <section class="col cards-flex">
-        <section class="pod">
-          <p class="title-bar">Games tagged with Strategy</p>
-          <section class="inner-pod">
-            <ul class="games-ul cards astro-3FGPQW3A">
-    <li class="astro-3FGPQW3A">
-          <a class="game-card astro-3FGPQW3A" href="/games/age-of-war">
-            <span class="astro-3FGPQW3A">
-              <img class="game-banner astro-3FGPQW3A" src="/game-banners/age-of-war.jpg" alt="Age Of War">
-            </span>
-            <span class="astro-3FGPQW3A">Age Of War</span>
-          </a>
-        </li>
-  </ul>
-          </section>
-        </section>
+        <section class="pod astro-IDGL5UL4">
+    <p class="title-bar astro-IDGL5UL4">Games with Strategy</p>
+    <section class="inner-pod cards-flex astro-IDGL5UL4">
+      <ul class="games-ul cards astro-IDGL5UL4">
+        <li class="game-card astro-IDGL5UL4">
+              <a class="inner-game-card astro-IDGL5UL4" href="/games/age-of-war">
+                <img class="game-banner astro-IDGL5UL4" src="/game-banners/age-of-war.png" alt="Age Of War">
+                <div class="game-card-meta astro-IDGL5UL4">
+                  <h1 class="game-title astro-IDGL5UL4">Age Of War</h1>
+
+                  <a class="game-tag pod astro-IDGL5UL4" href="/games/categories/Strategy">
+                      Strategy
+                    </a>
+                </div>
+              </a>
+            </li>
+      </ul>
+    </section>
+  </section>
       </section>
     </div>
   </div>
-  <footer class="astro-W6O2AMRQ">
-  <section class="footer-card flex astro-W6O2AMRQ">
-    <a href="/about" class="astro-W6O2AMRQ">About</a>
-    <a href="/rss.xml" class="astro-W6O2AMRQ">RSS</a>
-    <a href="/sitemap-index.xml" class="astro-W6O2AMRQ">Sitemap</a>
-    <a href="/about/privacy" class="astro-W6O2AMRQ">Privacy Policy</a>
+  <footer class="pod astro-FE2XNONK">
+  <section class="footer-card flex astro-FE2XNONK">
+    <a href="/about" class="astro-FE2XNONK">About</a>
+    <a href="/rss.xml" class="astro-FE2XNONK">RSS</a>
+    <a href="/sitemap-index.xml" class="astro-FE2XNONK">Sitemap</a>
+    <a href="/about/privacy" class="astro-FE2XNONK">Privacy Policy</a>
   </section>
-  <section class="footer-card astro-W6O2AMRQ">
-    <p class="astro-W6O2AMRQ">&copy; 2022 NaviNet</p>
+  <section class="footer-card astro-FE2XNONK">
+    <p class="astro-FE2XNONK">&copy; 2022 NaviNet</p>
   </section>
 </footer>
+
+  <style>
+    li.game-card {
+      display: flex;
+      gap: 0.5rem;
+      min-width: 100px;
+    }
+    img.game-banner {
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: var(--radius-1);
+    }
+    a.inner-game-card {
+      display: flex;
+      text-decoration: none;
+      color: var(--color-text);
+    }
+    div.game-card-meta {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-decoration: none;
+    }
+    div.game-card-meta h1.game-title {
+      font-size: 0.8rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 15ch;
+    }
+    div.game-card-meta a.game-tag {
+      padding: 0 0.25rem;
+      width: fit-content;
+      text-decoration: none;
+    }
+  </style>
+
+
 
 </html>
 
